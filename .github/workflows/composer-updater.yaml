@@ -17,4 +17,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUBTOKEN }}
           APP_SINGLE_BRANCH_POSTFIX: -composer-update-${{ steps.date.outputs.date }}
-          GIT_COMMIT_PREFIX: [AVALIAR] Atualização composer - 
+          GIT_COMMIT_PREFIX: '[AVALIAR] Atualização composer - '
