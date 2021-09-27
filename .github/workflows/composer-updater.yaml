@@ -11,14 +11,14 @@ jobs:
       - name: Update composer runner
         uses: kawax/composer-update-action@v2
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUBTOKEN }}
       - name: Get current date
         id: date
         run: echo "::set-output name=date::$(date +'%m-%Y')"
       - name: Create pull request
         uses: peter-evans/create-pull-request@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUBTOKEN }}
           commit-message: Atualizado pacotes do composer
           title: Atualização do Composer - ${{ steps.date.outputs.date }}
           body: |
