@@ -65,7 +65,11 @@
         ]
     },
     "config": {
-        "discard-changes": true
+        "discard-changes": true,
+        "platform": {
+            "php": "7.0.0",
+            "ext-XXX": "1.0.0"
+        }
     },
     "extra": {
         "symfony-app-dir": "app",
