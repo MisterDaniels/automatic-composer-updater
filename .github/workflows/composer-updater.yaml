@@ -22,7 +22,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUBTOKEN }}
           commit-message: Atualizado pacotes do composer
-          commiter: Github <noreply@github.com>
+          committer: Github <noreply@github.com>
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
           signoff: false
           branch: atualizacaoComposer${{ steps.date.outputs.date }}
