@@ -1,6 +1,6 @@
 name: Composer updater
 on:
-  workflow_dispatch
+  workflow_dispatch:
   schedule:
     - cron: '0 0 15 * *'
 jobs:
