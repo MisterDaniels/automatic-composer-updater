@@ -15,9 +15,9 @@ jobs:
         id: cup
         uses: kawax/composer-update-action@v2
         env:
-          GITHUB_TOKEN: NULL
+          GITHUB_TOKEN: ${{ secrets.GITHUBTOKEN }}
           GIT_NAME: Composer updater
           GIT_EMAIL: ajuda@auryn.com.br
           APP_SINGLE_BRANCH: 1
           APP_SINGLE_BRANCH_POSTFIX: -composer-update-${{ steps.date.outputs.date }}
-          GIT_COMMIT_PREFIX: '[AVALIAR] Atualização composer - '
+          GIT_COMMIT_PREFIX: "[AVALIAR] Atualização composer - "
