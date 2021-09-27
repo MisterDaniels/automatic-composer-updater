@@ -67,7 +67,7 @@
     "config": {
         "discard-changes": true,
         "platform": {
-            "php": "7.0.0",
+            "php": "7.0.8",
             "ext-XXX": "1.0.0"
         }
     },
